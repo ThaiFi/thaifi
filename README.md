@@ -1,1 +1,1 @@
-# artifacts-
+# Steps to Run a Fullnode
