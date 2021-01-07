@@ -1,0 +1,88 @@
+[Eth]
+NetworkId = 17
+SyncMode = "full"
+#DiscoveryURLs = []
+NoPruning = false
+NoPrefetch = false
+LightPeers = 100
+UltraLightFraction = 75
+DatabaseCache = 512
+DatabaseFreezer = ""
+TrieCleanCache = 256
+TrieDirtyCache = 256
+TrieTimeout = 3600000000000
+EnablePreimageRecording = false
+EWASMInterpreter = ""
+EVMInterpreter = ""
+
+[Eth.Miner]
+GasFloor = 30000000
+GasCeil = 40000000
+GasPrice = 18000000000
+Recommit = 10000000000
+Noverify = false
+
+[Eth.Ethash]
+CacheDir = ""
+CachesInMem = 0
+CachesOnDisk = 0
+CachesLockMmap = false
+DatasetDir = ""
+DatasetsInMem = 0
+DatasetsOnDisk = 0
+DatasetsLockMmap = false
+PowMode = 0
+
+[Eth.TxPool]
+Locals = []
+NoLocals = true
+Journal = "transactions.rlp"
+Rejournal = 3600000000000
+PriceLimit = 18000000000
+PriceBump = 10
+AccountSlots = 16
+GlobalSlots = 4096
+AccountQueue = 64
+GlobalQueue = 1024
+Lifetime = 10800000000000
+
+[Eth.GPO]
+Blocks = 20
+Percentile = 60
+
+[Shh]
+MaxMessageSize = 1048576
+RestrictConnectionBetweenLightClients = true
+
+[Node]
+DataDir = "node"
+InsecureUnlockAllowed = false
+NoUSB = true
+IPCPath = "geth.ipc"
+#HTTPHost = "127.0.0.1"
+#HTTPPort = 8575
+#HTTPVirtualHosts = ["*"]
+#HTTPModules = ["debug","eth", "net", "web3", "txpool"]
+#WSPort = 8576
+#WSModules = ["net", "web3", "eth"]
+
+[Node.P2P]
+MaxPeers = 50
+NoDiscovery = false
+StaticNodes = []
+BootstrapNodes = [
+"enode://9dca6e7d55b91ee0b9ee90237c3d79359c290d32afb7bccd9111b8b7671389eca30bacb2e399f6e4eb40794d2019eb03a92b371bc048f75c96b3c701ea7c34e6@212.129.7.9:30333",
+"enode://85715839b3042ead886980b516f9e577600b1fe6bd62fb5ff616da80f4500c38d90be5413056ad7caaa53cc9464fb8d1251b0704cb6581b97744e1e88d6fcf7e@212.129.2.9:30333"
+]
+TrustedNodes = [
+"enode://9dca6e7d55b91ee0b9ee90237c3d79359c290d32afb7bccd9111b8b7671389eca30bacb2e399f6e4eb40794d2019eb03a92b371bc048f75c96b3c701ea7c34e6@212.129.7.9:30333",
+"enode://85715839b3042ead886980b516f9e577600b1fe6bd62fb5ff616da80f4500c38d90be5413056ad7caaa53cc9464fb8d1251b0704cb6581b97744e1e88d6fcf7e@212.129.2.9:30333"
+]
+ListenAddr = ":30333"
+EnableMsgEvents = false
+
+[Node.HTTPTimeouts]
+ReadTimeout = 30000000000
+WriteTimeout = 30000000000
+IdleTimeout = 120000000000
+
