@@ -2,7 +2,7 @@
 
 ThaiFi is a blockchain service that allows developers to build their own DeFi  using smart contract. ThaiFi also compatible with the Ethereum Virtual Machine (EVM), which means it’s capable of running dapps ported over from Ethereum.
 
-## How to Run A Fullnode on Binance Smart Chain
+## How to Run A Fullnode on ThaiFi
 ### Fullnodes Functions
 - Stores the full blockchain history on disk and can answer the data request from the network.
 - Receives and validates the new blocks and transactions.
