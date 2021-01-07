@@ -1,1 +1,1 @@
-# Steps to Run a Fullnode
+# Steps to Run a ThaiFi Fullnode
