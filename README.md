@@ -45,7 +45,7 @@ $ docker run -it --rm  -v $PWD:/tfi -w /tfi ethereum/client-go --datadir /tfi/no
 ## generate  password
 $ echo "[Your Password]" > password.txt
 ## create new account
-$ docker run -it --rm -v -v $PWD:/tfi -w /tfi ethereum/client-go --datadir /tfi --password password.txt account new
+$ docker run -it --rm -v $PWD:/tfi -w /tfi ethereum/client-go --datadir /tfi --password password.txt account new
 ## Start your fullnode
 $ docker run -itd --restart=always -p 30003:30333 --name tfi-node -v $PWD:/tfi -w /tfi ethereum/client-go \
 --datadir /tfi/node --networkid 17 -cache 4096 --port 30333 --mine --unlock [account] --password password.txt \
