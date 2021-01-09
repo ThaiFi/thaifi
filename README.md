@@ -25,7 +25,7 @@ Synchronizes a full node starting at genesis, verifying all blocks and executing
 
 ## Steps to Run a ThaiFi Fullnode
 ```bash
-$ https://github.com/ThaiFi/thaifi.git
+$ git clone https://github.com/ThaiFi/thaifi.git
 # Enter the folder thaifi was cloned into
 cd thaifi
 # Write genesis state locally
@@ -37,7 +37,7 @@ $ docker run -it --rm -p 30333:30333 --name tfi-node -v $PWD:/tfi -w /tfi ethere
 ```
 ## Start your fullnode or a validator node
 ```bash
-$ https://github.com/ThaiFi/thaifi.git
+$ git clone https://github.com/ThaiFi/thaifi.git
 ## Enter the folder thaifi was cloned into
 cd thaifi
 ## Write genesis state locally
