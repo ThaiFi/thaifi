@@ -59,12 +59,13 @@ DataDir = "node"
 InsecureUnlockAllowed = false
 NoUSB = true
 IPCPath = "geth.ipc"
-#HTTPHost = "127.0.0.1"
-#HTTPPort = 8575
-#HTTPVirtualHosts = ["*"]
-#HTTPModules = ["debug","eth", "net", "web3", "txpool"]
-#WSPort = 8576
-#WSModules = ["net", "web3", "eth"]
+HTTPHost = "127.0.0.1"
+HTTPPort = 8545
+HTTPVirtualHosts = ["*"]
+HTTPModules = ["debug","eth", "net", "web3", "txpool"]
+WSPort = 8546
+WSOrigins = ["*"]
+WSModules = ["net", "web3", "eth"]
 
 [Node.P2P]
 MaxPeers = 50
@@ -72,11 +73,13 @@ NoDiscovery = false
 StaticNodes = []
 BootstrapNodes = [
 "enode://9dca6e7d55b91ee0b9ee90237c3d79359c290d32afb7bccd9111b8b7671389eca30bacb2e399f6e4eb40794d2019eb03a92b371bc048f75c96b3c701ea7c34e6@212.129.7.9:30333",
-"enode://85715839b3042ead886980b516f9e577600b1fe6bd62fb5ff616da80f4500c38d90be5413056ad7caaa53cc9464fb8d1251b0704cb6581b97744e1e88d6fcf7e@212.129.2.9:30333"
+"enode://85715839b3042ead886980b516f9e577600b1fe6bd62fb5ff616da80f4500c38d90be5413056ad7caaa53cc9464fb8d1251b0704cb6581b97744e1e88d6fcf7e@212.129.2.9:30333",
+"enode://22795580a42f5bb3282a6b3740edf91408493c07597f85cfbfe80d40046fc6878ed01e4ca75fc31665e056f0210817e8f103b778382bf44e59cebde591caa460@51.159.91.69:30333"
 ]
 TrustedNodes = [
 "enode://9dca6e7d55b91ee0b9ee90237c3d79359c290d32afb7bccd9111b8b7671389eca30bacb2e399f6e4eb40794d2019eb03a92b371bc048f75c96b3c701ea7c34e6@212.129.7.9:30333",
-"enode://85715839b3042ead886980b516f9e577600b1fe6bd62fb5ff616da80f4500c38d90be5413056ad7caaa53cc9464fb8d1251b0704cb6581b97744e1e88d6fcf7e@212.129.2.9:30333"
+"enode://85715839b3042ead886980b516f9e577600b1fe6bd62fb5ff616da80f4500c38d90be5413056ad7caaa53cc9464fb8d1251b0704cb6581b97744e1e88d6fcf7e@212.129.2.9:30333",
+"enode://22795580a42f5bb3282a6b3740edf91408493c07597f85cfbfe80d40046fc6878ed01e4ca75fc31665e056f0210817e8f103b778382bf44e59cebde591caa460@51.159.91.69:30333"
 ]
 ListenAddr = ":30333"
 EnableMsgEvents = false

@@ -31,7 +31,7 @@ cd thaifi
 # Write genesis state locally
 $ docker run -it --rm  -v $PWD:/tfi -w /tfi ethereum/client-go --datadir /tfi/node init genesis.json
 # Start your fullnode
-$ docker run -it --rm -p 30333:30333 --name tfi-node -v $PWD:/tfi -w /tfi ethereum/client-go \ 
+$ docker run -it --restart=always  -p 30333:30333 --name tfi-node -v $PWD:/tfi -w /tfi ethereum/client-go \ 
 --datadir /tfi/node --nousb --config ./config.toml  -cache 4096 --port 30333
  
 ```
